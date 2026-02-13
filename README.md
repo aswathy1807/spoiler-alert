@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [Spoiler Alert!] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team: Individual participation
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Aswathy S] - [College]
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[A Context-Aware Spoiler Suppression Engine for Web Browsers.]
 
 ### The Problem statement
-[What problem are you solving?]
+[These days, when a series is dropped on netflix, we are forced to watch it the moment it is released or else we might get spoiled.]
 
 ### The Solution
-[How are you solving it?]
+[SO, to avoid this issue, i created an extension to block out a specific word from any website!
+no more spoilers, happy binging!]
 
 ---
 
@@ -31,25 +31,19 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [JavaScript,html,css]
+- Frameworks used: [none]
+- Libraries used: [none]
+- Tools used: [VS Code, Git]
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [when we type a word into the test box in our extension, the extension blocks the word from any website]
+
 
 ---
 
@@ -57,25 +51,15 @@ List the key features of your project:
 
 ### For Software:
 
-#### Installation
-```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
 
 #### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
 
-### For Hardware:
+- 1.go to chrome://extensions
+- 2.turn on 'developer mode'.
+- 3.click on 'load unpacked'.
+- 4.select the folder when the extension is stored.
+- 5.the extension is loaded into chrome and ready to use!.
 
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
 
 ## Project Documentation
 
