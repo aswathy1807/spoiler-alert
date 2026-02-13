@@ -67,14 +67,15 @@ List the key features of your project:
 
 #### Screenshots 
 
-![screenshot 1](tinker.png)
-*extension ui*
+
+![Screenshot 1](extension.png)
+- *extension layout*
 
 ![Screenshot2](working.png)
-*sentences that contain the word "bridgerton" is now hidden*
+- *sentences that contain the word "bridgerton" is now hidden*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![screenshot 3](tinker.png)
+- *extension ui*
 
 #### Diagrams
 
