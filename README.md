@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Spoiler Alert!] 🎯
+# Spoiler Alert! 🎯
 
 ## Basic Details
 
 ### Team: Individual participation
 
 ### Team Members
-- Member 1: [Aswathy S] - [College]
+- Member 1: Aswathy S - LBSITW
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[A Context-Aware Spoiler Suppression Engine for Web Browsers.]
+A Context-Aware Spoiler Suppression Engine for Web Browsers.
 
 ### The Problem statement
-[These days, when a series is dropped on netflix, we are forced to watch it the moment it is released or else we might get spoiled.]
+These days, when a series is dropped on netflix, we are forced to watch it the moment it is released or else we might get spoiled.
 
 ### The Solution
-[SO, to avoid this issue, i created an extension to block out a specific word from any website!
-no more spoilers, happy binging!]
+SO, to avoid this issue, i created an extension to block out a specific word from any website!
+no more spoilers, happy binging!
 
 ---
 
@@ -42,7 +42,7 @@ no more spoilers, happy binging!]
 ## Features
 
 List the key features of your project:
-- Feature 1: [when we type a word into the test box in our extension, the extension blocks the word from any website]
+- Feature 1: when we type a word into the test box in our extension, the extension blocks the word from any website
 
 
 ---
@@ -70,8 +70,8 @@ List the key features of your project:
 ![screenshot 1](tinker.png)
 *extension ui*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](working.png)
+*sentences that contain the word "bridgerton" is now hidden*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
