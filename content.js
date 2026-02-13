@@ -1,38 +1,43 @@
 let blockedWords = [];
+let timeout = null;
 
-// 1. Get words from storage
+// Initial Load
 chrome.storage.local.get(['spoilers'], (res) => {
   blockedWords = res.spoilers || [];
   scanAndBlur();
 });
 
-// 2. The scanning function
 function scanAndBlur() {
   if (blockedWords.length === 0) return;
 
-  // We look for common text elements
-  const elements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, b, strong');
+  // Select text-heavy elements
+  const elements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, b, strong, a');
 
   elements.forEach(el => {
     const text = el.innerText.toLowerCase();
-    blockedWords.forEach(word => {
-      if (text.includes(word) && !el.classList.contains('spoiler-blurred')) {
-        el.classList.add('spoiler-blurred');
-        
-        // Click to reveal feature
-        el.onclick = (e) => {
-          e.preventDefault();
-          el.classList.toggle('spoiler-unblurred');
-        };
-      }
-    });
+    
+    // Check if any blocked word exists in this element
+    const match = blockedWords.some(word => text.includes(word));
+
+    if (match && !el.classList.contains('spoiler-shielded')) {
+      el.classList.add('spoiler-shielded');
+      
+      // Click-to-Reveal Logic
+      el.title = "Spoiler hidden by Shield. Click to reveal.";
+      el.style.cursor = "help";
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        el.classList.toggle('spoiler-revealed');
+      });
+    }
   });
 }
 
-// 3. The "Scroll Watcher" (MutationObserver)
-// This catches new posts on YouTube/Twitter as you scroll
+// Performance-optimized Scroll Watcher (Debounced)
 const observer = new MutationObserver(() => {
-  scanAndBlur();
+  clearTimeout(timeout);
+  timeout = setTimeout(scanAndBlur, 300); 
 });
 
 observer.observe(document.body, { childList: true, subtree: true });
