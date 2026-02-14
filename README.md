@@ -12,7 +12,7 @@
 - Member 1: Aswathy S - LBSITW
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[this is a chrome extension]
 
 ### Project Description
 A Context-Aware Spoiler Suppression Engine for Web Browsers.
